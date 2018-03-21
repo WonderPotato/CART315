@@ -1,0 +1,50 @@
+blnder stuff exercise due next friday
+
+remember to unwrap your sky plane to make the pic appear
+
+well the filmic worked on mine
+im having trouble with the uv align bullshit
+
+
+
+
+
+unity
+load level is a scene
+
+score =  this number 
+do this
+SceneManager.LoadScene("ESCENE NAME");
+
+if (score > x) SceneManager.LoadScene("scene name);
+
+
+TO DO
+
+carry score over to next level in order to progress in game
+
+random spawn point empty object for brick blocker to pop into, 4 random spots in an array of position???
+
+particl confetti celebration on each level
+
+particle effect on level 3
+
+explosions that destroy stuff on level 3 = difficult to score
+
+pew pew lasers attac on level 2 - star destroyer killer of dreams
+
+front end menu navigation (low priority)
+
+adjust canon control -smoother experience, level of power, triple blast ?
+
+star wars light saber sounds
+
+breathing darth vader sound clip before laser pew pew attac
+
+star wars music playing constantly in background
+
+bb8 - c3p0 r2d2 beep noises at random
+
+modify canon shape
+modify walls better hallway like in a new hope 
+orange grid floor
