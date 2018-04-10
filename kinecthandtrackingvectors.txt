@@ -1,0 +1,47 @@
+here it is codrin\
+
+
+so first make pvectors 
+
+
+
+//boop this is the traacker boop
+ PVector handRight;
+  PVector handLeft;
+
+
+
+inside of draw()
+
+do this\\
+    //implement specific joint name from pv2 kinect joint array of skeleton!!!!!!!!!
+     handRight = new PVector(joints[KinectPV2.JointType_HandRight].getX(),joints[KinectPV2.JointType_HandRight].getY(),joints[KinectPV2.JointType_HandRight].getZ());
+     handLeft = new PVector(joints[KinectPV2.JointType_HandLeft].getX(),joints[KinectPV2.JointType_HandLeft].getY(),joints[KinectPV2.JointType_HandLeft].getZ());
+   
+//the handleft and right thing responds to the joint array , so basically make a bunch of vectors for specific joints and then you can add some forces to them and do stuff with them
+
+
+
+
+
+
+
+out side of draw and within this function do this\
+
+
+inside handstate thing\
+
+
+void handState(int handState) {
+  switch(handState) {
+  case KinectPV2.HandState_Open:
+    stroke(0, 255, 0);
+    break;
+  case KinectPV2.HandState_Closed:
+    //stroke(255, 0, 0);
+      //create particles need to make it come out of hands joint!!!!  howwwwww
+     // systems.add(new ParticleSystem(2, new PVector(handLeft.x, handLeft.y)));
+    // fill(255,0,0);
+    // ellipse(handLeft.x*40, handLeft.y*40,50,50);
+     strokeWeight(5);
+    point(handLeft.x*40, handLeft.y*40 , handLeft.z*40);		/////this is where the point is following the hand
